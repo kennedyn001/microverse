@@ -23,9 +23,21 @@
     <h1 id="title">Survey form</h1>
     <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, minima quo. Iste enim molestias a, deserunt, aspernatur numquam illo ea dolore fugiat ad minus obcaecati incidunt vero facilis, beatae nulla!</p>
     <form id="survey-form">
-      <input type="text" id="name" required>
-      <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
-      <input type="number" id="number" required max="100000" min="100">
+      <label for="name" id="name-label">Enter Name</label><br>
+      <input type="text" id="name" name="name" required placeholder="Name"><br>
+      <label for="email" id="email-label">Enter Emai</label><br>
+      <input type="email" id="email" pattern=".+@globex\.com" size="30" name="email" required placeholder="email"><br>
+      <label for="number" id="number-label">Enter Number</label><br>
+      <input type="number" id="number" required max="100000" min="100" name="number" placeholder="phone numer"><br>
+      <select id="dropdown">
+        <option>option 1</option>
+        <option>option 2</option>
+        <option>option 3</option>
+      </select><br>
+      <input type="radio" name="gender" value="gemder">F <input type="radio" name="gender" value="gender">M<br>
+      <input type="checkbox" value="1">1<input type="checkbox" value="2">2<br>
+      <textarea cols="13" rows="2"></textarea><br>
+      <button type="submit" value="Submit" id="submit">Submit</button>
     </form>
   </body>
 </html>
